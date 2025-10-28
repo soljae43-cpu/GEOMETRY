@@ -1,64 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>EMATH Grade 8 - By Jami</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>EMATH Grade 8 - By Jami</title>
 <style>
 body{
-margin:0;
-font-family:Arial, sans-serif;
-overflow-x:hidden;
+  margin:0;
+  font-family:Arial, sans-serif;
+  overflow-x:hidden;
 }
 
-/* START SCREEN */
 #start{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-background:url('https://i.pinimg.com/originals/ca/7d/57/ca7d5760efa1edd4308ad0ec5fbe1fdc.gif') center/cover no-repeat;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:url('https://i.pinimg.com/originals/ca/7d/57/ca7d5760efa1edd4308ad0ec5fbe1fdc.gif') center/cover no-repeat;
 }
 
 .start-title{
-font-size:23px;
-color:white;
-background:rgba(0,0,0,0.3);
-padding:8px 20px;
-border-radius:10px;
-margin-bottom:20px;
+  font-size:23px;
+  color:white;
+  background:rgba(0,0,0,0.3);
+  padding:8px 20px;
+  border-radius:10px;
+  margin-bottom:20px;
 }
 
 button{
-padding:20px 60px;
-font-size:25px;
-border:none;
-border-radius:50px;
-color:black;
-cursor:pointer;
-background:#ffd2f9;
-box-shadow:0 0 20px #ff9ade;
-transition:0.3s;
+  padding:20px 60px;
+  font-size:25px;
+  border:none;
+  border-radius:50px;
+  color:black;
+  cursor:pointer;
+  background:#ffd2f9;
+  box-shadow:0 0 20px #ff9ade;
+  transition:0.3s;
 }
 button:hover{transform:scale(1.1);}
 
-/* CONTENT PAGE */
 #content{
-display:none;
-padding:20px;
-background:url('https://i.pinimg.com/originals/4c/61/f8/4c61f8dbda3404dce696a74c25236d75.gif') center/cover fixed;
-color:black;
-text-shadow:0 0 8px white;
+  display:none;
+  padding:20px;
+  background:url('https://i.pinimg.com/originals/4c/61/f8/4c61f8dbda3404dce696a74c25236d75.gif') center/cover fixed;
+  color:black;
+  text-shadow:0 0 8px white;
 }
 
 section{
-background:rgba(255,255,255,0.8);
-padding:20px;
-border-radius:15px;
-margin:20px auto;
-max-width:900px;
+  background:rgba(255,255,255,0.8);
+  padding:20px;
+  border-radius:15px;
+  margin:20px auto;
+  max-width:900px;
 }
 
 h1,h2,h3{text-align:center;}
@@ -66,31 +63,29 @@ h1{font-size:38px;margin-bottom:20px;}
 p{font-size:18px;line-height:1.6;text-align:justify;}
 
 table{
-width:90%;
-margin:20px auto;
-border-collapse:collapse;
-background:white;
+  width:90%;
+  margin:20px auto;
+  border-collapse:collapse;
+  background:white;
 }
 th,td{border:1px solid black;padding:10px;}
 
 iframe{
-display:block;
-margin:20px auto;
-width:90%;
-height:300px;
-border-radius:10px;
+  display:block;
+  margin:20px auto;
+  width:90%;
+  height:300px;
+  border-radius:10px;
 }
-
 </style>
 </head>
-
 <body>
 
 <audio id="clickSound" src="https://cdn.pixabay.com/audio/2023/07/21/audio_a0e3cd05a0.mp3"></audio>
 
 <div id="start">
-<div class="start-title">⭒⋆ by Jami ⋆⭒</div>
-<button onclick="showContent()">OPEN EMATH!</button>
+  <div class="start-title">⭒⋆ by Jami ⋆⭒</div>
+  <button onclick="showContent()">OPEN EMATH!</button>
 </div>
 
 <div id="content">
@@ -139,23 +134,11 @@ Ratios help us solve life problems like height measurements and distance.</p>
 </section>
 
 <section>
-<h2></h2>
-<p>Fractions • Algebra • Ratio & Proportion • Geometry </p>
+<h2>Fractions • Algebra • Ratio & Proportion • Geometry</h2>
 </section>
 
-</div>
-
-<script>
-function showContent(){
-document.getElementById("clickSound").play();
-document.getElementById("start").style.display="none";
-document.getElementById("content").style.display="block";
-window.scrollTo(0,0);
-}
-</script>
-
-<h2>WHERE I LEARNED MY HTML <3
-- Jaimee Persephone B. Rojo</h2>
+<section>
+<h2>WHERE I LEARNED MY HTML <3 - Jaimee Persephone B. Rojo</h2>
 <ul>
 <li><a href="https://youtu.be/pQN-pnXPaVg" target="_blank">html for beginners</a></li>
 <li><a href="https://youtu.be/UB1O30fR-EE" target="_blank">tutorial 2</a></li>
@@ -163,6 +146,16 @@ window.scrollTo(0,0);
 <li><a href="https://youtu.be/qz0aGYrrlhU" target="_blank">tutorial 4</a></li>
 <li><a href="https://youtu.be/BsDoLVMnmZs" target="_blank">html in 1hr</a></li>
 </ul>
+</section>
+
+<script>
+function showContent(){
+  document.getElementById("clickSound").play();
+  document.getElementById("start").style.display="none";
+  document.getElementById("content").style.display="block";
+  window.scrollTo(0,0);
+}
+</script>
 
 </body>
 </html>
